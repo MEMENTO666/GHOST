@@ -1,0 +1,25 @@
+#becomeTheGhost {
+  width:100vw;
+  height:80vh;
+  background-image: url(../image/katana.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#becomeTheGhost_text {
+  width:800px;
+  height:80%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 60px;
+  color: white;
+  font-size: 20px;
+}
+

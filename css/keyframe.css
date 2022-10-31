@@ -1,0 +1,22 @@
+@keyframes slide {
+  from {
+    bottom:-200px;
+    opacity: 0;
+  }
+  to {
+    bottom: 85px;
+    opacity: 1;
+  }
+};
+
+
+@keyframes slide2 {
+  from {
+    bottom:-200px;
+    opacity: 0;
+  }
+  to {
+    bottom: 85px;
+    opacity: 2;
+  }
+};

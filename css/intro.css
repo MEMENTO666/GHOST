@@ -1,0 +1,34 @@
+#intro {
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+video {
+  width: 100vw;
+  height: 100%;
+  object-fit:fill;
+  background-color:white;
+}
+
+
+#logo {
+  width:60%;
+  height:50%;
+  /* background-color: aliceblue; */
+  position: absolute;
+  background-image: url(../image/logo.png);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+@media screen and (max-width:768px) {
+  #intro {
+  height: 30vh;
+  }  
+}
