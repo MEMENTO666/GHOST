@@ -5,8 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS -->
   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/menu.css"/>
   <link rel="stylesheet" href="css/intro.css"/>
   <link rel="stylesheet" href="css/intro_sub.css"/>
   <link rel="stylesheet" href="css/slide.css"/>
@@ -16,7 +20,27 @@
 </head>
 <body>
   <div id="container">
-    <div id="header">헤더</div>
+    <div class="menu">
+      <div id="logo_small"></div>
+      <span class="ClickMenu"><p>MENU1</p>
+        <ul class="sub">
+          <li>
+             <a href="#">GhostOfTsushima</a>
+          </li>
+          <li>
+             <a href="#">Profile</a>
+          </li>
+          <li>
+             <a href="#">Contact</a>
+          </li>
+        </ul>
+      </span>
+      <div class="MenuList">
+        <li class="li_list">MENU</li>
+        <li class="li_list">MENU</li>
+        <li class="li_list">MENU</li>
+    </div>
+    </div>  
     <div id="intro">
       <div id="logo"></div>
       <video autoplay loop muted >
@@ -25,7 +49,7 @@
     </div>
     <div id="intro_sub">
       <div>
-        <div class="intro_sub_text">
+        <div class="intro_sub_text" data-aos="fade-right" >
           <h1>전쟁에 짓밟힌 쓰시마,고대의
             <br>아름다움은 계속된다</h1>
           <p>전장을 넘어, 지금까지 경험하지 못한 봉건 시대 일본을 경험하세요.<span>이 오픈월드 액션 어드벤처에서 당신은 넓은 초원과 거대한 지형을 탐험하고,</span> 다양한 캐릭터와
@@ -35,7 +59,7 @@
         </div>
       </div>
       <div>
-        <div class="intro_sub_text_02">
+        <div class="intro_sub_text_02" data-aos="fade-left" >
           <h1>비상하는 망령</h1>
           <p>진은 사무라이의 방식을 배우며 자랐습니다.<span>그리고 사무라이가 몽골군에 패하자, 그의 세상은 부서집니다.
           </span>진은 가장 어려운 선택을 할 수밖에 없습니다.<span>사무라이 정신에 기반한 명예와 전통을 유지하며 승리할 수 없는 전쟁을 할지,</span>아니면 사무라이의 길에서 벗어나 수단과 방법을 가리지 않고 섬과 주민을 보호할지
@@ -47,7 +71,7 @@
         </div>
       </div>
       <div>
-        <div class="intro_sub_text">
+        <div class="intro_sub_text" data-aos="fade-right">
           <h1>진흙, 피, 강철</h1>
           <p> 병사들은 예측불가능하며, 전쟁과 무기에 익숙합니다.<span>새로운 능력과 전략을 습득하며 전쟁을 유리하게 끌어가고, 섬과 섬의 주민들을 보호하세요.</span>
 
@@ -110,6 +134,14 @@
   </div>
 
   <script src="js/slide.js"></script>
+  <script src="js/menu.js"></script>
+  <script> 
+    AOS.init({
+      duration:2000,
+    });
+    
+  
+  </script>
 
   
 </body>
