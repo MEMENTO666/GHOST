@@ -1,0 +1,138 @@
+.menu{
+  width:100vw;
+  height:60px;
+  /* border: 2px solid #C71E0E; */
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  position:fixed;
+  /* position:absolute; */
+  z-index: 3;
+  font-weight: bold;
+  top: 10px;
+}
+
+.ClickMenu>.sub {
+  height:0px;
+  list-style:none;
+  overflow:hidden;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width:200px;
+  top: 35px;
+  z-index: 3;
+  padding: 0;
+  background-color: #C71E0E;
+}
+
+.ClickMenu>.sub li{
+  flex-direction: column;
+  margin: 1px;
+  color: white;
+  font-size: 18px;
+}
+
+.ClickMenu>.sub li>a{
+  text-decoration:none;
+  color: white;
+  line-height: 35px;
+}
+
+
+.ClickMenu {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  /* background-image: url(../image/MenuIcon.png); */
+  width:120px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo_small {
+  width:200px;
+  height:60px;
+  /* background-color: white; */
+  background-image: url(../image/SPLogo.png);
+  background-position: center;
+  background-size:175px;
+  background-repeat: no-repeat;
+}
+
+.MenuList {
+  width:70%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.MenuList > li {
+  width:120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width:768px) {
+  .MenuList {
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 13px;
+
+  }
+
+  .MenuList > li {
+    width:118px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+  }
+
+  .MenuList > li:hover {
+    color: #C71E0E;
+    transition: 1.5s;
+  }
+
+  .ClickMenu {
+    font-size: 13px;
+    width:117px;
+    background-image: none;
+  }
+
+  .ClickMenu:hover {
+    color: #C71E0E;
+    transition: 1.5s;
+  }
+  
+  #logo_small {
+    width:130px;
+    height:40px;
+    background-image: url(../image/SPLogo.png);
+    background-position: center;
+    background-size: 125px;
+  }
+
+  .ClickMenu>.sub {
+    width:150px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ClickMenu>.sub li{
+    font-size: 14px;
+  }
+  
+}

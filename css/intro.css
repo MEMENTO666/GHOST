@@ -5,6 +5,7 @@
   justify-content: center;
   position: relative;
   z-index: 2;
+  border-top: 3px solid #C71E0E;
 }
 
 video {

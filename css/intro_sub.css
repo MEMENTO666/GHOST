@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   font-family: 'JSongMyung-Regular-KO';
 }
 
@@ -58,7 +58,7 @@
   color: white;
   font-size: 15px;
   /* border: 1px solid red; */
-  animation: slide 2s;
+  transition: 2s;
 }
 
 .intro_sub_text > h1 {
@@ -81,9 +81,6 @@
   color: white;
   font-size: 15px;
   /* border: 1px solid red; */
-  animation: slide 2s;
-
-
 }
 
 .intro_sub_text_02 > h1 {
