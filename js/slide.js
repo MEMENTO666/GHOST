@@ -20,6 +20,6 @@ for(i = 0; i < sliders.length; i++) {
 }
 
 IMG[indexValue-1].style.display = "block";
-sliders[indexValue-1].style.backgroundColor = "#C71E0E";
+sliders[indexValue-1].style.backgroundColor = "#cb3b3e";
 sliders[indexValue-1].style.transition = "0.7s";
 }

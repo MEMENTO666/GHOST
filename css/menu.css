@@ -49,24 +49,27 @@
   list-style: none;
   display: flex;
   /* background-image: url(../image/MenuIcon.png); */
-  width:120px;
+  width:110px;
   height: 40px;
   align-items: center;
   justify-content: center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+
 }
 
 #logo_small {
-  width:200px;
+  width:270px;
   height:60px;
   /* background-color: white; */
   background-image: url(../image/SPLogo.png);
   background-position: center;
-  background-size:175px;
+  background-size:240px;
   background-repeat: no-repeat;
 }
 
 .MenuList {
-  width:70%;
+  width:65%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -83,46 +86,49 @@
 
 
 @media screen and (max-width:768px) {
-  .MenuList {
-    width:50%;
+  .menu{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content:space-between; */
+  }
+
+  .MenuList {
+    width:55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 13px;
 
   }
 
   .MenuList > li {
-    width:118px;
+    /* width:118px; */
+    width: 110px;
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-image: none;
-  }
-
-  .MenuList > li:hover {
-    color: #C71E0E;
-    transition: 1.5s;
+    justify-content: space-evenly;
+    background-size: 85px;
+    background-repeat: no-repeat;
+    margin: 5px;
   }
 
   .ClickMenu {
     font-size: 13px;
-    width:117px;
-    background-image: none;
+    /* width:114px; */
+    width:80px;
+    background-size: 80px;
+    background-repeat: no-repeat;
   }
 
-  .ClickMenu:hover {
-    color: #C71E0E;
-    transition: 1.5s;
-  }
+ 
   
   #logo_small {
-    width:130px;
+    width:110px;
     height:40px;
     background-image: url(../image/SPLogo.png);
     background-position: center;
-    background-size: 125px;
+    background-size: 110px;
   }
 
   .ClickMenu>.sub {

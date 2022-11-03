@@ -1,14 +1,14 @@
 #slide {
   width:100vw;
-  height:62vh;
+  height:600px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .content {
-  width:1200px;
-  height:100%;
+  width:1400px;
+  height:540px;
   overflow: hidden;
   position: relative;
   background-position: center;
@@ -24,8 +24,8 @@
 }
 
 .images > img {
-  width:1200px;
-  height:550px;
+  width:1400px;
+  height:540px;
 }
 .btm-sliders {
   position: absolute;
@@ -73,20 +73,19 @@
     height:40vh;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   
   .content {
     width: 600px;
-    height:350px;
+    height:330px;
 
   }
   .images > img {
     width:600px;
-    height:350px;
+    height:330px;
   }
   .content .slide {
-    top: 170px;
+    top: 150px;
     cursor: pointer;
   }
   

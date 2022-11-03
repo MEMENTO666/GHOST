@@ -46,9 +46,12 @@ const makeEvents1 = () => {
     
     LiList[i].addEventListener("mouseout", () => {
       LiList[i].style.backgroundImage ="none";
+      //todo 여기 반응형으로 다시 손봐야 할듯, matchmedia 사용해서 작아지면 이미지 안보이게.
     });
   }
 }
+
+
 
 const makeEvents2 = () => {
   LiList.forEach( (singleNode, idx) => {
@@ -68,8 +71,8 @@ const makeEvents2 = () => {
   });
 }
 
-makeEvents1();
-// makeEvents2();
+makeEvents1(); //! for
+// makeEvents2(); //! forEach
 
 
 ClickMenu.addEventListener("mouseover", () => {
@@ -93,12 +96,10 @@ window.addEventListener("mousewheel", () =>{
     ClickMenu.style.color = "white";
     MENUBOX.style.top = "10px";
 
-
-
-
   }
-})
+});
 
+  
 
 
 
