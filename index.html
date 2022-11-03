@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/intro_sub.css"/>
   <link rel="stylesheet" href="css/slide.css"/>
   <link rel="stylesheet" href="css/becomeTheGhost.css"/>
+  <link rel="stylesheet" href="css/wallpaper.css"/>
   <link rel="stylesheet" href="css/keyframe.css"/>
   <title>GhostOfTsushima</title>
 </head>
@@ -22,7 +23,7 @@
   <div id="container">
     <div class="menu">
       <div id="logo_small"></div>
-      <span class="ClickMenu"><p>MENU1</p>
+      <span class="ClickMenu"><p>MENU</p>
         <ul class="sub">
           <li>
              <a href="#">GhostOfTsushima</a>
@@ -84,16 +85,16 @@
     <div id="slide">
       <div class="content">
         <div class="images">
-          <img src="./image/1.jpg">
-          <img src="./image/2.jpg">
-          <img src="./image/3.jpg">
-          <img src="./image/4.jpg">
-          <img src="./image/5.jpg">
-          <img src="./image/6.jpg">
-          <img src="./image/7.jpg">
-          <img src="./image/8.jpg">
-          <img src="./image/9.jpg">
-          <img src="./image/10.jpg">
+          <img class="slideImg" src="./image/1.jpg">
+          <img class="slideImg" src="./image/2.jpg">
+          <img class="slideImg" src="./image/3.jpg">
+          <img class="slideImg" src="./image/4.jpg">
+          <img class="slideImg" src="./image/5.jpg">
+          <img class="slideImg" src="./image/6.jpg">
+          <img class="slideImg" src="./image/7.jpg">
+          <img class="slideImg" src="./image/8.jpg">
+          <img class="slideImg" src="./image/9.jpg">
+          <img class="slideImg" src="./image/10.jpg">
          
         </div>
         <div onClick="side_slide(-1)" class="slide left">
@@ -128,7 +129,7 @@
         </div>
         <div id="GhostText">
           <p><MARQUEE hspace="100" vspace="100" direction="up"
-            scrollamount="2"><sapn class="RedSpan">망령</sapn>이 되어라.
+            scrollamount="3"><sapn class="RedSpan">망령</sapn>이 되어라.
 
             <span>서기 1274년.</span>
             
@@ -146,14 +147,42 @@
 
             <span>일본의 자유를 위해 비전통적인 전쟁을 벌이면서 새로운 전투 방식,</span>
 
-            <span>즉 <sapn class="RedSpan" style = "color:red">망령</sapn>의 방식을 구축하려면 사무라이 전통을 넘어서야 합니다.</span>
+            <span>즉 <sapn class="RedSpan">망령</sapn>의 방식을 구축하려면 사무라이 전통을 넘어서야 합니다.</span>
           </MARQUEE></p>
         </div>
     </div>
-  </div>
+    <div id="wallpaper">
+      <div id="wallpaper_text">
+        <p>배경화면</p>
+      </div>
+      <div class="WallPaper_01">
+        <div class="GOTwall"><img src="./image/GOTwall1.jpg"></div>
+        <div class="GOTwall"><img src="./image/GOTwall2.jpg"></div>
+        <div class="GOTwall"><img src="./image/GOTwall3.jpg"></div>
+        <div class="GOTwall"><img src="./image/GOTwall4.jpg"></div>
+        </div>
+        <!-- 여기까지 -->
+        <div class="WallPaper_01">
+          <div class="GOTwall"><img src="./image/GOTwall5.jpg"></div>
+          <div class="GOTwall"><img src="./image/GOTwall6.jpg"></div>
+          <div class="GOTwall"><img src="./image/GOTwall7.jpg"></div>
+          <div class="GOTwall"><img src="./image/GOTwall8.jpg"></div>
+          </div>
+
+      </div>
+      <div class="popup_image">
+        <span>&times;</span>
+        <img src="./image/GOTwall1.jpg">
+      </div>
+    </div>
+      
+      
+    </div>
 
   <script src="js/slide.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/wallpaper.js"></script>
+
   <script> 
     AOS.init({
       duration:2000,
