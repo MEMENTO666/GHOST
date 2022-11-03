@@ -1,19 +1,17 @@
 #becomeTheGhost {
   width:100vw;
-  height:75vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* position: absolute; */
-  /* z-index: 1; */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  position: relative;
+  overflow: hidden;
+  background-color: black;
 
 }
 
 #GhostText {
   /* border: 1px solid red; */
-  width:750px;
-  height: 450px;
+  width:700px;
+  height: 60vh;
   position: absolute;
   color: white;
   display: flex;
@@ -23,12 +21,19 @@
   overflow: hidden;
   font-size: 18px;
   font-family: 'JSongMyung-Regular-KO';
+  right: 20px;
+  margin-top: 10px;  
+  text-shadow: 2px 1px 2px black;
 }
 
 #video {
   width:100%;
-  /* height:530px; */
-  border: 1px solid red;
+  height:90%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 #GhostText >p >marquee {
   margin-left: 0px;
@@ -65,11 +70,14 @@
     display: none;
   }
   #GhostText {
-    width:500px;
+    width:100%;
     height: 450px;
     line-height: 50px;
     font-size: 15px;
     font-family: 'JSongMyung-Regular-KO';
+    right: 0px;
+    bottom: -1px;
+
   }
 
   
