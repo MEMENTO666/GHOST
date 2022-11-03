@@ -6,7 +6,7 @@ function btm_slide(e){showImg(indexValue = e);}
 function side_slide(e){showImg(indexValue += e);}
 function showImg(e) {
 // let i;
-const IMG = document.querySelectorAll("img")
+const IMG = document.querySelectorAll(".slideImg")
 const sliders = document.querySelectorAll(".btm-sliders span")
 
 if(e > IMG.length) {indexValue = 1};
