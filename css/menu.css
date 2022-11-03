@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'LeferiPoint-BlackObliqueA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .menu{
   width:100vw;
   height:60px;
@@ -12,6 +18,7 @@
   z-index: 3;
   font-weight: bold;
   top: 10px;
+  font-family: 'LeferiPoint-BlackObliqueA';
 }
 
 .ClickMenu>.sub {
@@ -34,6 +41,7 @@
   margin: 1px;
   color: white;
   font-size: 18px;
+  padding: 1%;
 }
 
 .ClickMenu>.sub li>a{
@@ -49,11 +57,11 @@
   list-style: none;
   display: flex;
   /* background-image: url(../image/MenuIcon.png); */
-  width:110px;
+  width:125px;
   height: 40px;
   align-items: center;
   justify-content: center;
-  background-size: 100px;
+  object-fit: cover;
   background-repeat: no-repeat;
 
 }
@@ -64,7 +72,8 @@
   /* background-color: white; */
   background-image: url(../image/SPLogo.png);
   background-position: center;
-  background-size:240px;
+  /* background-size:240px; */
+  object-fit: cover;
   background-repeat: no-repeat;
 }
 
@@ -103,12 +112,13 @@
 
   .MenuList > li {
     /* width:118px; */
-    width: 110px;
+    width: 80px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-size: 85px;
+    background-size: 80px;
+    /* object-fit: cover; */
     background-repeat: no-repeat;
     margin: 5px;
   }
