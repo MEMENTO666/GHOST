@@ -1,8 +1,7 @@
 #footer {
   width: 100vw;
   height: 200px;
-  background-color: gray;
-  background-image: url(../image/GOTfooter.png);
+  background-color:black;
   /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 4px solid #cb3b3e;
 }
 
 #footer_inner {
