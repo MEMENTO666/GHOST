@@ -1,55 +1,55 @@
 @font-face {
-  font-family: 'LeferiPoint-BlackObliqueA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff') format('woff');
+  font-family: "LeferiPoint-BlackObliqueA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff")
+  format("woff");
   font-weight: normal;
   font-style: normal;
 }
-.menu{
-  width:100vw;
-  height:60px;
+.menu {
+  width: 100vw;
+  height: 60px;
   /* border: 2px solid #C71E0E; */
   display: flex;
   list-style: none;
   align-items: center;
   justify-content: space-around;
   color: white;
-  position:fixed;
+  position: fixed;
   /* position:absolute; */
   z-index: 3;
   font-weight: bold;
   top: 10px;
-  font-family: 'LeferiPoint-BlackObliqueA';
+  font-family: "LeferiPoint-BlackObliqueA";
 }
 
-.ClickMenu>.sub {
-  height:0px;
-  list-style:none;
-  overflow:hidden;
+.ClickMenu > .sub {
+  height: 0px;
+  list-style: none;
+  overflow: hidden;
   transition: 1s;
   display: flex;
   flex-direction: column;
   position: absolute;
-  width:200px;
+  width: 200px;
   top: 35px;
   z-index: 3;
   padding: 0;
-  background-color: #C71E0E;
+  background-color: #c71e0e;
 }
 
-.ClickMenu>.sub li{
+.ClickMenu > .sub li {
   flex-direction: column;
   margin: 1px;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   padding: 1%;
 }
 
-.ClickMenu>.sub li>a{
-  text-decoration:none;
+.ClickMenu > .sub li > a {
+  text-decoration: none;
   color: white;
   line-height: 35px;
 }
-
 
 .ClickMenu {
   cursor: pointer;
@@ -57,18 +57,17 @@
   list-style: none;
   display: flex;
   /* background-image: url(../image/MenuIcon.png); */
-  width:125px;
+  width: 125px;
   height: 40px;
   align-items: center;
   justify-content: center;
   object-fit: cover;
   background-repeat: no-repeat;
-
 }
 
 #logo_small {
-  width:270px;
-  height:60px;
+  width: 270px;
+  height: 60px;
   /* background-color: white; */
   background-image: url(../image/SPLogo.png);
   background-position: center;
@@ -78,7 +77,7 @@
 }
 
 .MenuList {
-  width:65%;
+  width: 65%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -86,69 +85,66 @@
 }
 
 .MenuList > li {
-  width:120px;
+  width: 120px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-@media screen and (max-width:768px) {
-  .menu{
+@media screen and (max-width: 768px) {
+  .menu {
     display: flex;
     align-items: center;
     /* justify-content:space-between; */
   }
 
   .MenuList {
-    width:55%;
+    /* width: 80%; */
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 13px;
-
+    justify-content: space-around;
+    /* font-size: 13px; */
   }
 
   .MenuList > li {
     /* width:118px; */
-    width: 80px;
+    width: 90px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-size: 80px;
+    background-size: 90px;
     /* object-fit: cover; */
     background-repeat: no-repeat;
     margin: 5px;
+    font-size: 12px;
+
   }
 
   .ClickMenu {
-    font-size: 13px;
+    font-size: 12px;
     /* width:114px; */
-    width:80px;
-    background-size: 80px;
+    width: 90px;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
- 
-  
   #logo_small {
-    width:110px;
-    height:40px;
+    width: 110px;
+    height: 40px;
     background-image: url(../image/SPLogo.png);
     background-position: center;
     background-size: 110px;
   }
 
-  .ClickMenu>.sub {
-    width:150px;
+  .ClickMenu > .sub {
+    width: 150px;
     align-items: center;
     justify-content: center;
   }
 
-  .ClickMenu>.sub li{
-    font-size: 14px;
+  .ClickMenu > .sub li {
+    font-size: 13px;
   }
-  
 }

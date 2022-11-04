@@ -1,5 +1,5 @@
 #wallpaper {
-  width:100vw;
+  width: 100vw;
   /* height:100vh; */
   /* border: 1px solid red; */
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .WallPaper_01 {
-  width:100vw;
+  width: 100vw;
   /* height:60vh; */
   /* border: 1px solid blue; */
   display: flex;
@@ -20,24 +20,22 @@
 }
 
 #wallpaper_text {
-  width:500px;
-  height:60px;
+  width: 700px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  color: white;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 10px;
   /* border: 1px solid white; */
   margin-top: 20px;
-  background-image: url(../image/red_button.png);
+  background-image: url(../image/white_button_large.png);
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
   transition: 0.5s;
-
 }
 
 .GOTwall {
@@ -46,13 +44,14 @@
   /* border: 1px solid white; */
   overflow: hidden;
   transition: 0.5s;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  box-shadow: 4px 2.5px 3px rgba(138, 138, 138, 0.637);
   /**이미지 박스**/
 }
 
 .GOTwall > img {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: 0.5s;
 }
@@ -67,8 +66,8 @@
   top: 0;
   left: 0;
   backdrop-filter: blur(5px);
-  width:100%;
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   z-index: 100;
   display: none;
 }
@@ -95,23 +94,21 @@
   object-fit: cover;
 }
 
-
-
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   .GOTwall {
-    width:250px;
+    width: 250px;
     transition: 0.5s;
   }
 }
 
-@media screen and (max-width:1020px) {
+@media screen and (max-width: 1020px) {
   .GOTwall {
-    width:340px;
+    width: 340px;
     height: 600px;
     transition: 0.5s;
   }
   .WallPaper_01 {
-    width:100vw;
+    width: 100vw;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -121,19 +118,17 @@
   .WallPaper_01 div:nth-child(4) {
     margin-top: 15px;
   }
-  
 }
 
-@media screen and (max-width:850px) {
-  .GOTwall  {
-    width:90%;
+@media screen and (max-width: 850px) {
+  .GOTwall {
+    width: 90%;
     height: 700px;
     margin: 10px;
   }
 
-
   .WallPaper_01 {
-    width:100vw;
+    width: 100vw;
     /* height:600vh; */
     display: flex;
     flex-direction: column;
@@ -141,13 +136,10 @@
     flex-wrap: nowrap;
   }
   #wallpaper_text {
-    width:400px;
-    height:60px;
+    width: 400px;
+    height: 60px;
     background-size: 300px;
     font-size: 22px;
     transition: 0.5s;
-   
   }
-  
-
 }
