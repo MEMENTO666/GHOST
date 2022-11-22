@@ -85,12 +85,13 @@
 }
 
 .MenuList > li {
-  width: 120px;
+  width: 130px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {
